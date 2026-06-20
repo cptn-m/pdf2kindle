@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 280px; padding: 12px; font-family: sans-serif; }
+    input { width: 100%; margin-bottom: 8px; padding: 6px; box-sizing: border-box; }
+    button { width: 100%; padding: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <input id="supabaseUrl" placeholder="Supabase project URL" />
+  <input id="supabaseKey" placeholder="Supabase anon key" />
+  <input id="bucket" placeholder="Bucket name" />
+  <button id="save">Save credentials</button>
+  <button id="convert">Save this page as PDF</button>
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
