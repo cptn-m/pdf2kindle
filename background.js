@@ -1,3 +1,5 @@
+console.log("content.js loaded")
+
 browser.action.onClicked.addListener(async (tab) => {
   try {
     await browser.tabs.saveAsPDF({

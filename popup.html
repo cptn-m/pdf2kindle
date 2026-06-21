@@ -2,17 +2,36 @@
 <html>
 <head>
   <style>
-    body { width: 280px; padding: 12px; font-family: sans-serif; }
-    input { width: 100%; margin-bottom: 8px; padding: 6px; box-sizing: border-box; }
-    button { width: 100%; padding: 8px; cursor: pointer; }
+    body { width: 300px; padding: 16px; font-family: sans-serif; }
+    h3 { margin-top: 0; }
+    input {
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      border-radius: 4px;
+      border: none;
+    }
+    #saveBtn { background: #eee; }
+    #convertBtn { background: #3ecf8e; color: white; font-weight: bold; }
+    #status { font-size: 12px; color: #555; }
   </style>
 </head>
 <body>
-  <input id="supabaseUrl" placeholder="Supabase project URL" />
-  <input id="supabaseKey" placeholder="Supabase anon key" />
-  <input id="bucket" placeholder="Bucket name" />
-  <button id="save">Save credentials</button>
-  <button id="convert">Save this page as PDF</button>
+  <h3>PDF to Supabase</h3>
+  <!-- <input id="supabaseUrl" placeholder="Supabase project URL" /> -->
+  <!-- <input id="supabaseKey" placeholder="Supabase anon key" /> -->
+  <!-- <input id="bucket" placeholder="Bucket name" /> -->
+  <!-- <button id="saveBtn">Save credentials</button> -->
+  <button id="convertBtn">Convert & Upload PDF</button>
   <p id="status"></p>
   <script src="popup.js"></script>
 </body>
